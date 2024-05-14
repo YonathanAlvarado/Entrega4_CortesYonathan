@@ -1,0 +1,198 @@
+main {
+    background-color: $primary-color;
+}
+
+.Background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    .background-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $secondary-color;
+        z-index: 1;
+    }
+
+    .carousel-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        .carousel-item {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+
+            &:first-child {
+                opacity: 1;
+            }
+
+            &.active {
+                opacity: 1;
+            }
+
+            .image-container {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    z-index: 0;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: white;
+                    opacity: $opacity;
+                }
+            }
+        }
+    }
+
+    .text-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 2;
+        color: rgb(255, 255, 255);
+
+        h1 {
+            font-size: 128px;
+            font-family: 'TenorSansRegular';
+        }
+
+        p {
+            font-size: 32px;
+            font-family: 'TenorSansRegular';
+        }
+    }
+}
+
+.mapping {
+    padding: 50px;
+
+    #carouselExampleControls {
+        border: 8px solid #5c5c5c;
+        border-radius: 10px;
+    }
+
+    h2 {
+        font-size: 64px;
+        font-family: 'TenorSansRegular';
+        margin-top: 45%;
+        margin-right: 50%;
+
+        @media (max-width: 768px) {
+            font-size: 48px;
+            margin-top: 0;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .col-md-6 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .order-md-1 {
+            order: -1;
+        }
+    }
+}
+
+.retopology {
+    padding: 50px;
+
+    #carouselExampleControls-retopology {
+        border: 8px solid #5c5c5c;
+        border-radius: 10px;
+    }
+
+    h2 {
+        font-size: 64px;
+        font-family: 'TenorSansRegular';
+        margin-top: 45%;
+        margin-right: 50%;
+
+        @media (max-width: 768px) {
+            font-size: 48px;
+            margin-top: 0;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .col-md-6 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .order-md-1 {
+            order: -1;
+        }
+    }
+}
+
+
+body {
+    background-color: $secondary-color;
+}
+
+h1 {
+    text-align: center;
+}
+
+.curriculum {
+    .experience {
+        background-color: $secondary-color;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        animation: fadeIn 0.5s ease forwards;
+
+        h2 {
+            color: #ffffff;
+        }
+
+        p {
+            margin-bottom: 5px;
+            color: rgb(0, 0, 0);
+        }
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

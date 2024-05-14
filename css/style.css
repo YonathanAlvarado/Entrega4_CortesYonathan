@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.navbar .navbar-brand img {
+  max-width: 60px;
+  max-height: 60px;
+  width: auto;
+  height: auto;
+}
+
+.footer {
+  background-color: #191c1f;
+  padding: 1rem;
+  text-align: center;
+}
+.footer__social-icons {
+  margin-bottom: 1rem;
+}
+.footer__social-icons .footer__social-icon-link {
+  width: 40px;
+  height: auto;
+  margin-right: 0.5rem;
+}
+.footer__copyright {
+  color: white;
+}
+
+.footer__social-icons a {
+  text-decoration: none;
+  outline: none;
+}
+
+main {
+  background-color: rgb(59, 59, 59);
+}
+
+.Background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.Background .background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(138, 138, 138, 0.5);
+  z-index: 1;
+}
+.Background .carousel-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.Background .carousel-inner .carousel-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.Background .carousel-inner .carousel-item:first-child {
+  opacity: 1;
+}
+.Background .carousel-inner .carousel-item.active {
+  opacity: 1;
+}
+.Background .carousel-inner .carousel-item .image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.Background .carousel-inner .carousel-item .image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.Background .carousel-inner .carousel-item .image-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0.01;
+}
+.Background .text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+  color: rgb(255, 255, 255);
+}
+.Background .text-container h1 {
+  font-size: 128px;
+  font-family: "TenorSansRegular";
+}
+.Background .text-container p {
+  font-size: 32px;
+  font-family: "TenorSansRegular";
+}
+
+.mapping {
+  padding: 50px;
+}
+.mapping #carouselExampleControls {
+  border: 8px solid #5c5c5c;
+  border-radius: 10px;
+}
+.mapping h2 {
+  font-size: 64px;
+  font-family: "TenorSansRegular";
+  margin-top: 45%;
+  margin-right: 50%;
+}
+@media (max-width: 768px) {
+  .mapping h2 {
+    font-size: 48px;
+    margin-top: 0;
+  }
+}
+@media (max-width: 768px) {
+  .mapping .col-md-6 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .mapping .order-md-1 {
+    order: -1;
+  }
+}
+
+.retopology {
+  padding: 50px;
+}
+.retopology #carouselExampleControls-retopology {
+  border: 8px solid #5c5c5c;
+  border-radius: 10px;
+}
+.retopology h2 {
+  font-size: 64px;
+  font-family: "TenorSansRegular";
+  margin-top: 45%;
+  margin-right: 50%;
+}
+@media (max-width: 768px) {
+  .retopology h2 {
+    font-size: 48px;
+    margin-top: 0;
+  }
+}
+@media (max-width: 768px) {
+  .retopology .col-md-6 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .retopology .order-md-1 {
+    order: -1;
+  }
+}
+
+body {
+  background-color: rgba(138, 138, 138, 0.5);
+}
+
+h1 {
+  text-align: center;
+}
+
+.curriculum .experience {
+  background-color: rgba(138, 138, 138, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+}
+.curriculum .experience h2 {
+  color: #ffffff;
+}
+.curriculum .experience p {
+  margin-bottom: 5px;
+  color: rgb(0, 0, 0);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.card {
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+
+/*# sourceMappingURL=style.css.map */
