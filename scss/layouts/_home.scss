@@ -82,11 +82,11 @@ main {
             font-size: 128px;
             font-family: 'TenorSansRegular';
 
-            // Estilos adicionales para hacerlo responsive
-            font-size: 2rem; // Tamaño de fuente adaptable
+            
+            font-size: 2rem;
 
             @media only screen and (min-width: 768px) {
-                font-size: 8rem; // Aumentar el tamaño de fuente en pantallas más grandes
+                font-size: 8rem; 
             }
         }
 
@@ -94,11 +94,11 @@ main {
             font-size: 32px;
             font-family: 'TenorSansRegular';
 
-            // Estilos adicionales para hacerlo responsive
-            font-size: 1.5rem; // Tamaño de fuente adaptable
+            
+            font-size: 1.5rem; 
 
             @media only screen and (min-width: 768px) {
-                font-size: 2rem; // Aumentar el tamaño de fuente en pantallas más grandes
+                font-size: 2rem; 
             }
         }
     }
