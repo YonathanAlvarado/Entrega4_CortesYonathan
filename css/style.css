@@ -111,10 +111,22 @@ main {
 .Background .text-container h1 {
   font-size: 128px;
   font-family: "TenorSansRegular";
+  font-size: 2rem;
+}
+@media only screen and (min-width: 768px) {
+  .Background .text-container h1 {
+    font-size: 8rem;
+  }
 }
 .Background .text-container p {
   font-size: 32px;
   font-family: "TenorSansRegular";
+  font-size: 1.5rem;
+}
+@media only screen and (min-width: 768px) {
+  .Background .text-container p {
+    font-size: 2rem;
+  }
 }
 
 .mapping {

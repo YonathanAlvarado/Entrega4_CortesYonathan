@@ -81,11 +81,25 @@ main {
         h1 {
             font-size: 128px;
             font-family: 'TenorSansRegular';
+
+            // Estilos adicionales para hacerlo responsive
+            font-size: 2rem; // Tamaño de fuente adaptable
+
+            @media only screen and (min-width: 768px) {
+                font-size: 8rem; // Aumentar el tamaño de fuente en pantallas más grandes
+            }
         }
 
         p {
             font-size: 32px;
             font-family: 'TenorSansRegular';
+
+            // Estilos adicionales para hacerlo responsive
+            font-size: 1.5rem; // Tamaño de fuente adaptable
+
+            @media only screen and (min-width: 768px) {
+                font-size: 2rem; // Aumentar el tamaño de fuente en pantallas más grandes
+            }
         }
     }
 }
